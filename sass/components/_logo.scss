@@ -1,0 +1,24 @@
+.logo {
+  font-style: normal;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: $secondary-font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &-active {
+    color: $primary-accent-color;
+  }
+
+  .main-nav & {
+    margin-right: 85px;
+    color: $logo-color;
+  }
+
+  .footer & {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: $white-color;
+  }
+}

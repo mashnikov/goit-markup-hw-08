@@ -1,0 +1,130 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 61px;
+  background-color: $footer-background-color;
+}
+
+.main-container {
+  display: flex;
+}
+
+.contacts-container {
+  margin-right: 69px;
+}
+
+.social-links-container {
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+
+.subscribe-form {
+  padding-top: 12px;
+  padding-bottom: 35px;
+  margin-left: 93px;
+  flex-grow: 1;
+}
+
+.adress-links .link {
+  display: inline-block;
+  color: $footer-adress-color;
+  line-height: 1.71;
+
+  transition: color $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $primary-accent-color;
+  }
+}
+
+.footer-link-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.adress-links .map {
+  color: $white-color;
+  line-height: 1.71;
+}
+
+.footer .text {
+  display: block;
+  margin-bottom: 20px;
+  color: $white-color;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer .social-link-list {
+  display: flex;
+}
+
+.footer .social-link-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer .social-link {
+  background-color: $footer-social-links-background-color;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-accent-color;
+  }
+}
+
+.footer .social-link-icon {
+  fill: $white-color;
+}
+
+.footer-input-container {
+  display: flex;
+}
+
+.footer-form-field {
+  position: relative;
+
+  flex-grow: 1;
+}
+
+.footer-form-label {
+  position: absolute;
+  top: 30%;
+  left: 16px;
+
+  display: block;
+  color: $footer-adress-color;
+  font-size: 16px;
+  line-height: 1.25;
+
+  transition: color $transition-duration $timing-function;
+
+  .footer-form-field:focus-within > & {
+    color: $white-color;
+    border-color: $white-color;
+  }
+}
+
+.email-input-field {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 79px;
+  padding-right: 16px;
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+
+  color: $white-color;
+  font-size: 16px;
+  line-height: 1.25;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition: border-color $transition-duration $timing-function;
+
+  .footer-form-field:focus-within > & {
+    border-color: $white-color;
+  }
+}

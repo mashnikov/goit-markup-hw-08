@@ -1,0 +1,58 @@
+// Кнопки Hero, Footer и  кнопка модального окна
+
+.hero-button,
+.form-button {
+  border-radius: 4px;
+  border-width: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 200px;
+  min-height: 50px;
+
+  background-color: $primary-accent-color;
+  color: $white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  transition: background-color $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $additional-accent-color;
+  }
+}
+
+.hero-button {
+  display: inline-block;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}
+
+.form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  padding-left: 29px;
+  padding-right: 29px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  & .telegram-icon {
+    margin-left: 10px;
+  }
+
+  .modal & {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
