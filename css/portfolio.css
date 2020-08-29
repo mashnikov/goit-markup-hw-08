@@ -287,21 +287,20 @@ summary {
 }
 
 .logo {
-  font-style: normal;
+  display: flex;
   cursor: pointer;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
 }
 
 .logo-active {
   color: #2196f3;
 }
 
-.main-nav .logo {
-  margin-right: 85px;
+.page-header .logo {
   color: #000000;
 }
 
@@ -327,7 +326,7 @@ summary {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover, .hero-button:focus,
@@ -367,29 +366,41 @@ summary {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
 }
 
-.section-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  color: #212121;
-  font-size: 36px;
-  line-height: 1.67;
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .page-header {
@@ -397,32 +408,17 @@ summary {
   align-items: center;
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
-.site-nav {
-  display: flex;
-}
-
 .site-nav-item {
   position: relative;
 }
 
-.site-nav-item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .site-nav .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: #212121;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover, .site-nav .link:focus {
@@ -436,7 +432,7 @@ summary {
 .site-nav .link.current::after {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -8px;
   content: "";
   display: block;
   width: 100%;
@@ -445,25 +441,15 @@ summary {
   border-radius: 2px;
 }
 
-.authorization-nav {
-  display: flex;
-  margin-left: auto;
-}
-
-.auth-nav-item + .auth-nav-item {
-  margin-left: 30px;
-}
-
 .authorization-nav .link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: #757575;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .authorization-nav .link:hover, .authorization-nav .link:focus {
@@ -473,11 +459,147 @@ summary {
 .auth-nav-link-icon {
   margin-right: 10px;
   fill: #757575;
+  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .authorization-nav .link:hover .auth-nav-link-icon,
 .authorization-nav .link:focus .auth-nav-link-icon {
   fill: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header {
+    position: relative;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .icon-burger,
+  .icon-close {
+    transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 393px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 140px;
+    padding-right: 140px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    transform: translateY(-150%);
+    transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-wrapper.is-open {
+    border-top: 1px solid #ececec;
+    transform: translateY(0%);
+  }
+  .menu-btn {
+    background-color: transparent;
+    border: none;
+  }
+  .menu-btn:focus .icon-burger,
+  .menu-btn:focus .icon-close, .menu-btn:hover .icon-burger,
+  .menu-btn:hover .icon-close {
+    fill: #2196f3;
+  }
+  .menu-btn.is-open .icon-close {
+    display: block;
+  }
+  .menu-btn.is-open .icon-burger {
+    display: none;
+  }
+  .icon-close {
+    display: none;
+  }
+  .site-nav {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .site-nav-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .authorization-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .auth-nav-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .authorization-nav .link {
+    min-width: 178px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+  .menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 81px;
+  }
+  .site-nav {
+    display: flex;
+  }
+  .site-nav-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .site-nav .link.current::after {
+    bottom: 0;
+  }
+  .authorization-nav .link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .auth-nav-link-icon {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .auth-nav-item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .menu-wrapper {
+    margin-left: 85px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .authorization-nav {
+    display: flex;
+    align-items: center;
+  }
+  .auth-nav-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .authorization-nav .link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .our-team {
@@ -537,7 +659,7 @@ summary {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover, .social-link:focus {
@@ -548,7 +670,7 @@ summary {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover .social-link-icon,
@@ -586,7 +708,7 @@ summary {
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.71;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-links .link:hover, .adress-links .link:focus {
@@ -648,7 +770,7 @@ summary {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-field:focus-within > .footer-form-label {
@@ -671,7 +793,7 @@ summary {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-field:focus-within > .email-input-field {
@@ -705,7 +827,7 @@ summary {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover, .button:focus {
@@ -736,7 +858,7 @@ summary {
 .portfolio-list-link {
   text-decoration: none;
   display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-link:hover, .portfolio-list-link:focus {
@@ -796,7 +918,7 @@ summary {
   line-height: 1.56;
   opacity: 0;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-link:hover .text-hidden,

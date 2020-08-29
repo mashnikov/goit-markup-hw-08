@@ -1,21 +1,3 @@
-.section.features {
-  padding-bottom: 0;
-}
-
-.features-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.features-list-item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
 .fetures-icon-container {
   display: flex;
   align-items: center;
@@ -38,6 +20,7 @@
 
   color: $secondary-text-color;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -48,3 +31,107 @@
 
   line-height: 1.71;
 }
+
+@media screen and (max-width: 767px) {
+  .features-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .features-list .title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    // justify-content: space-between;
+  }
+
+  // .features-list-item {
+  //   max-width: 354px;
+  // }
+
+  .features-list-item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list-item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .section.features {
+    padding-bottom: 0;
+  }
+}
+
+// .section.features {
+//   padding-bottom: 0;
+// }
+
+// .features-list {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+// .features-list-item {
+//   width: calc((100% - 90px) / 4);
+//   margin-right: 30px;
+
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
+
+// .fetures-icon-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 120px;
+//   margin-bottom: 30px;
+//   background-color: $secondary-background-color;
+//   border-radius: 4px;
+// }
+
+// .features-icon {
+//   width: 70px;
+//   height: 70px;
+// }
+
+// .features-list .title {
+//   margin-top: 0;
+//   margin-bottom: 10px;
+//   padding: 0;
+
+//   color: $secondary-text-color;
+//   font-weight: 700;
+//   line-height: 1.14;
+//   text-transform: uppercase;
+// }
+
+// .features-list .text {
+//   margin-top: 0;
+//   margin-bottom: 0;
+
+//   line-height: 1.71;
+// }
