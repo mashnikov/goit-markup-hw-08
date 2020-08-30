@@ -57,16 +57,16 @@
   .features-list-item {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
-
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-list-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
+  }
+
+  .features-list-item:nth-child(2n) {
+    margin-right: 0;
   }
 }
 

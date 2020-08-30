@@ -1,30 +1,38 @@
-.what-we-do .list {
-  display: flex;
-  justify-content: space-between;
+@media screen and (max-width: 1199px) {
+  .section.what-we-do {
+    display: none;
+  }
 }
 
-.what-we-do .item {
-  position: relative;
-}
+@media screen and (min-width: 1200px) {
+  .what-we-do .list {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.what-we-do-image {
-  display: block;
-}
+  .what-we-do .item {
+    position: relative;
+  }
 
-.what-we-do .text {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 0;
+  .what-we-do-image {
+    display: block;
+  }
 
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  color: $white-color;
-  background-color: $hero-background-color;
-  font-weight: 700;
-  line-height: 1.14;
-  text-align: center;
-  text-transform: uppercase;
+  .what-we-do .text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: $white-color;
+    background-color: $hero-background-color;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }

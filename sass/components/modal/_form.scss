@@ -64,6 +64,22 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .form-text {
+    line-height: 1.5;
+  }
+
+  .form-label {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  .checkbox-field {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
 .modal-input-icon {
   position: absolute;
   top: 50%;
