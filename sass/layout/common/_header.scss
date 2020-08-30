@@ -1,98 +1,13 @@
 .page-header {
-  // position: relative;
   display: flex;
-  // justify-content: space-between;
   align-items: center;
-
-  // outline: 1px solid black;
-  // padding-top: 10px;
-  // padding-bottom: 10px;
 }
-
-// .icon-burger,
-// .icon-close {
-//   transition: fill $transition-duration $timing-function;
-// }
-
-// .menu-btn {
-//   background-color: transparent;
-//   border: none;
-
-//   &:focus,
-//   &:hover {
-//     .icon-burger,
-//     .icon-close {
-//       fill: $primary-accent-color;
-//     }
-//   }
-
-//   &.is-open {
-//     .icon-close {
-//       display: block;
-//     }
-
-//     .icon-burger {
-//       display: none;
-//     }
-//   }
-// }
-
-// .icon-close {
-//   display: none;
-// }
-
-// .menu-wrapper {
-//   outline: 1px solid red;
-
-//   position: absolute;
-//   top: 100%;
-//   left: 0;
-//   width: 100%;
-//   height: 393px;
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-//   padding-left: 140px;
-//   padding-right: 140px;
-
-//   transform: translateY(-150%);
-//   transition: transform $transition-duration $timing-function;
-
-//   &.is-open {
-//     border-top: 1px solid $header-border-color;
-//     transform: translateY(0%);
-//   }
-// }
-
-// .site-nav {
-//   margin-bottom: 60px;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
 
 .site-nav-item {
   position: relative;
 }
 
-// .site-nav-item:not(:last-child) {
-//   margin-bottom: 40px;
-// }
-
-// .authorization-nav {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
-// .auth-nav-item:not(:last-child) {
-//   margin-bottom: 16px;
-// }
-
 .site-nav .link {
-  //   display: block;
-  //   padding-top: 32px;
-  //   padding-bottom: 32px;
-
   color: $secondary-text-color;
   font-weight: 500;
   font-size: 18px;
@@ -126,14 +41,11 @@
 .authorization-nav .link {
   display: flex;
   align-items: center;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
   color: $primary-text-color;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  // min-width: 178px;
 
   transition: color $transition-duration $timing-function;
 
@@ -253,11 +165,6 @@
     display: none;
   }
 
-  // .logo {
-  //   margin-right: 81px;
-  //   min-width: 141px;
-  // }
-
   .menu-wrapper {
     display: flex;
     align-items: center;
@@ -285,10 +192,6 @@
       bottom: 0;
     }
   }
-
-  // .authorization-nav {
-  //   margin-left: 84px;
-  // }
 
   .authorization-nav .link {
     font-size: 12px;
@@ -336,96 +239,3 @@
 .header {
   border-bottom: 1px solid $header-border-color;
 }
-
-// .page-header {
-//   display: flex;
-//   align-items: center;
-// }
-
-// .main-nav {
-//   display: flex;
-//   align-items: center;
-// }
-
-// .site-nav {
-//   display: flex;
-// }
-
-// .site-nav-item {
-//   position: relative;
-
-//   &:not(:last-child) {
-//     margin-right: 50px;
-//   }
-// }
-
-// .site-nav .link {
-//   display: block;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-
-//   color: $secondary-text-color;
-//   font-weight: 500;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-
-//   transition: color $transition-duration $timing-function;
-
-//   &:hover,
-//   &:focus {
-//     color: $primary-accent-color;
-//   }
-
-//   &.current {
-//     color: $primary-accent-color;
-
-//     &::after {
-//       position: absolute;
-//       left: 0;
-//       bottom: 0;
-//       content: "";
-//       display: block;
-//       width: 100%;
-//       height: 4px;
-//       background: $primary-accent-color;
-//       border-radius: 2px;
-//     }
-//   }
-// }
-
-// .authorization-nav {
-//   display: flex;
-//   margin-left: auto;
-// }
-
-// .auth-nav-item + .auth-nav-item {
-//   margin-left: 30px;
-// }
-
-// .authorization-nav .link {
-//   display: flex;
-//   align-items: center;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-//   color: $primary-text-color;
-//   font-weight: 500;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-
-//   transition: color $transition-duration $timing-function;
-
-//   &:hover,
-//   &:focus {
-//     color: $primary-accent-color;
-//   }
-// }
-
-// .auth-nav-link-icon {
-//   margin-right: 10px;
-//   fill: $primary-text-color;
-
-//   .authorization-nav .link:hover &,
-//   .authorization-nav .link:focus & {
-//     fill: $primary-accent-color;
-//   }
-// }

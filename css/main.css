@@ -647,12 +647,42 @@ summary {
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/hero-bg-image.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/mobile/hero/hero-bg-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: rgba(47, 48, 58, 0.8);
   text-align: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/mobile/hero/hero-bg-image@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/tablet/hero/hero-bg-image.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/tablet/hero/hero-bg-image@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/desktop/hero/hero-bg-image.jpg);
+  }
+}
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/desktop/hero/hero-bg-image@2x.jpg);
+  }
 }
 
 .hero-title {
@@ -783,6 +813,8 @@ summary {
   }
   .what-we-do-image {
     display: block;
+    width: 100%;
+    height: auto;
   }
   .what-we-do .text {
     position: absolute;
@@ -816,8 +848,8 @@ summary {
 .our-team .member-photo {
   display: block;
   margin-bottom: 30px;
-  width: 100%;
-  max-height: 320px;
+  max-width: 100%;
+  height: auto;
 }
 
 .our-team .title {
