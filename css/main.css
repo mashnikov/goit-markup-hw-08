@@ -326,7 +326,7 @@ summary {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover, .hero-button:focus,
@@ -425,6 +425,10 @@ summary {
     font-size: 36px;
     line-height: 1.67;
   }
+  .portfolio-section {
+    padding-top: 93px;
+    padding-bottom: 97px;
+  }
 }
 
 .section-title {
@@ -447,7 +451,7 @@ summary {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover, .site-nav .link:focus {
@@ -478,7 +482,7 @@ summary {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .authorization-nav .link:hover, .authorization-nav .link:focus {
@@ -488,7 +492,7 @@ summary {
 .auth-nav-link-icon {
   margin-right: 10px;
   fill: #757575;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .authorization-nav .link:hover .auth-nav-link-icon,
@@ -505,10 +509,11 @@ summary {
   }
   .icon-burger,
   .icon-close {
-    transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .menu-wrapper {
     position: absolute;
+    z-index: 10;
     top: 100%;
     left: 0;
     width: 100%;
@@ -520,7 +525,7 @@ summary {
     background: #ffffff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     transform: translateY(-150%);
-    transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .menu-wrapper.is-open {
     border-top: 1px solid #ececec;
@@ -631,6 +636,10 @@ summary {
     font-size: 14px;
     line-height: 1.14;
   }
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 .hero {
@@ -845,7 +854,7 @@ summary {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover, .social-link:focus {
@@ -856,7 +865,7 @@ summary {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover .social-link-icon,
@@ -914,7 +923,7 @@ summary {
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-link:hover, .clients-list-link:focus {
@@ -923,7 +932,7 @@ summary {
 
 .clients-link-icon {
   fill: #afb1b8;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-link:hover .clients-link-icon,
@@ -980,7 +989,7 @@ summary {
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.71;
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-links .link:hover, .adress-links .link:focus {
@@ -1039,7 +1048,7 @@ summary {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-field:focus-within > .footer-form-label {
@@ -1062,7 +1071,7 @@ summary {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-field:focus-within > .email-input-field {
@@ -1143,7 +1152,7 @@ summary {
   transform: scale(1);
   opacity: 1;
   transform-origin: center;
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -1193,7 +1202,7 @@ summary {
 
 .modal-close-button-icon {
   fill: #000000;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button:hover .modal-close-button-icon,
@@ -1215,7 +1224,7 @@ summary {
   padding-right: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 2500ms;
+  transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .form-input:focus, .form-input:not(:placeholder-shown) {
@@ -1240,7 +1249,7 @@ summary {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 2500ms, color cubic-bezier(0.4, 0, 0.2, 1) 2500ms;
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms, color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .form-input:focus + .form-label,
@@ -1279,7 +1288,7 @@ summary {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  transition: fill cubic-bezier(0.4, 0, 0.2, 1) 2500ms;
+  transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .form-input:focus ~ .modal-input-icon,
@@ -1295,7 +1304,7 @@ summary {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 2500ms;
+  transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .form-textarea:focus, .form-textarea:not(:placeholder-shown) {
@@ -1308,7 +1317,7 @@ summary {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 2500ms;
+  transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .form-textarea:focus::placeholder {
@@ -1349,7 +1358,7 @@ summary {
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
-  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 2500ms, border-color cubic-bezier(0.4, 0, 0.2, 1) 2500ms, transform cubic-bezier(0.4, 0, 0.2, 1) 2500ms;
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .checkbox:checked + .checkbox-icon {
