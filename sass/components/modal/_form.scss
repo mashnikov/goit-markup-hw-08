@@ -159,7 +159,7 @@
 
 .checkbox-icon {
   display: inline-block;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
 
   border: 2px solid $secondary-text-color;
