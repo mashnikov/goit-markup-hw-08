@@ -287,7 +287,7 @@ summary {
 }
 
 .logo {
-  display: flex;
+  display: block;
   cursor: pointer;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -302,6 +302,7 @@ summary {
 
 .page-header .logo {
   color: #000000;
+  white-space: nowrap;
 }
 
 .footer .logo {

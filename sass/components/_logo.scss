@@ -1,5 +1,5 @@
 .logo {
-  display: flex;
+  display: block;
   cursor: pointer;
   text-decoration: none;
   font-family: $secondary-font-family;
@@ -13,6 +13,7 @@
 
   .page-header & {
     color: $logo-color;
+    white-space: nowrap;
   }
 
   .footer & {
