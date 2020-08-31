@@ -28,8 +28,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  min-height: 581px;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-right: 43.5px;
@@ -41,9 +39,21 @@
   border-radius: 4px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .modal {
+    width: calc(100% - 30px);
+  }
+}
+
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
   }
 }
 
